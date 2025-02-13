@@ -59,9 +59,7 @@ router.post("/upload", upload.single("image"), async (req, res) => {
     }
 
     // 3️⃣ Save new image URL to user profile
-    const newImageUrl = `${req.protocol}://${req.get("host")}/uploads/${
-      req.file.filename
-    }`;
+    const newImageUrl = `https://paymatebackend.onrender.com/uploads/${req.file.filename}`;
     user.image = newImageUrl;
     await user.save();
 
