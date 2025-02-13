@@ -16,7 +16,7 @@ const { authenticateUser } = require("./middleware/Authentication");
 connection(process.env.MONGO_URI);
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.use(cors(corsOptions));
 app.use(express.urlencoded({ extended: false }));
