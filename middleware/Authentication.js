@@ -1,5 +1,5 @@
-const { verifyToken } = require("../services/authentication");
 const User = require("../models/User");
+const { verifyToken } = require("../services/Authentication");
 
 async function authenticateUser(req, res, next) {
   let token;
