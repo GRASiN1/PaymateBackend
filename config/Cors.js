@@ -5,6 +5,7 @@ const corsOptions = {
     "https://paymatetrack.netlify.app", // Netlify frontend
     "https://paymate-steel.vercel.app", // Vercel frontend
     "https://paymate-steel.vercel.app",
+    "https://paymate-ruddy.vercel.app",
   ],
   methods: "GET,POST,PUT,DELETE,OPTIONS",
   allowedHeaders: ["Content-Type", "Authorization"],

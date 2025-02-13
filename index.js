@@ -32,5 +32,5 @@ app.use("/api/groups", authenticateUser, groupsRouter);
 app.use("/api/expenses", authenticateUser, expensesRouter);
 
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`);
+  console.log(`Running on port ${port}`);
 });
