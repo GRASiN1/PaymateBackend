@@ -6,7 +6,6 @@ const {
   handleGetGroups,
   handleCloseGroup,
 } = require("../controllers/Groups");
-const { authenticateUser } = require("../middleware/Authentication");
 
 router.post("/createGroup", handleCreateGroup);
 router.post("/joinGroup/:groupLink", handleJoinGroup);
